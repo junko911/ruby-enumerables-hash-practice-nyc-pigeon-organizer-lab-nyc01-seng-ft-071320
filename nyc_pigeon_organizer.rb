@@ -5,18 +5,24 @@ def nyc_pigeon_organizer(data)
   
   data.each { |key, value| 
     
-    value.each {
-      .each { |name|
-      if !new_list[name]
-        new_list[name] = {}
-      end
-      if !new_list[name][key]
-        new_list[name][key] = []
-      end
-      new_list[name][key] << 
+    value.each { |inner_key, names|
+    
+      names.each { |name|
+      
+        if !new_list[name]
+          new_list[name] = {}
+        end
+        
+        if !new_list[name][key]
+          new_list[name][key] = []
+        end
+        
+        new_list[name][key] << inner_key.to_s
+      }        
     }
   }
   
+  new_list
 end
 
 
