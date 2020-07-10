@@ -5,7 +5,8 @@ def nyc_pigeon_organizer(data)
   
   data.each { |key, value| 
     
-    value.each.each { |name|
+    value.each {
+      .each { |name|
       if !new_list[name]
         new_list[name] = {}
       end
