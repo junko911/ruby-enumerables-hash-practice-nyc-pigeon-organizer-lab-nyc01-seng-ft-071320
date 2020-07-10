@@ -3,12 +3,16 @@ require 'pry'
 def nyc_pigeon_organizer(data)
   new_list = {}
   
-  data.each_value { |arrributes| 
+  data.each { |key, value| 
     
-    attributes.each_value.each { |name|
+    value.each_value.each { |name|
       if !new_list[name]
         new_list[name] = {}
       end
+      if !new_list[name][key]
+        new_list[name][key] = []
+      end
+      new_list[name][key] << 
     }
   }
   
