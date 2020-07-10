@@ -3,7 +3,10 @@ require 'pry'
 def nyc_pigeon_organizer(data)
   new_list = {}
   
-  data.each_value { |
+  data.each_value { |arrributes| 
+    
+    attributes.each_value
+  }
   
 end
 
