@@ -5,7 +5,7 @@ def nyc_pigeon_organizer(data)
   
   data.each_value { |arrributes| 
     
-    attributes.each_value
+    attributes.each_value.each
   }
   
 end
